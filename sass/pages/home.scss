@@ -1,0 +1,53 @@
+#body {
+  background-image: url("../../imagens/backgroundLp.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  color: white;
+}
+
+.img-class {
+  width: 200px;
+}
+
+#principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-color;
+  width: 450px;
+}
+
+#button-div {
+  display: flex;
+  justify-content: center;
+}
+
+#button-class {
+  border-color: $button-color;
+  color: $button-color;
+
+  &:hover {
+    background-color: $button-color;
+    color: white;
+  }
+}
+
+#footer {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 460px) {
+  #body {
+    font-size: 14px;
+  }
+  #principal {
+    width: 96%;
+  }
+
+  #footer {
+    font-size: 16px;
+  }
+}
